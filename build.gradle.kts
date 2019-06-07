@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("io.projectreactor.netty:reactor-netty")
+    implementation("io.projectreactor.netty:reactor-netty:0.8.8.RELEASE")
 //    implementation("io.netty:netty-tcnative-boringssl-static:2.0.25.Final")
 
     implementation("commons-io:commons-io:2.5")
