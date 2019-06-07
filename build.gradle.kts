@@ -1,22 +1,16 @@
 plugins {
     id("org.jetbrains.kotlin.jvm").version("1.3.20")
-    id("io.spring.dependency-management").version("1.0.7.RELEASE")
     application
-}
-
-dependencyManagement {
-    imports {
-        mavenBom("io.projectreactor:reactor-bom:Californium-RELEASE")
-    }
 }
 
 repositories {
     jcenter()
+    maven("https://repo.spring.io/milestone")
 }
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("io.projectreactor.netty:reactor-netty:0.8.8.RELEASE")
+    implementation("io.projectreactor.netty:reactor-netty:0.9.0.M1")
 //    implementation("io.netty:netty-tcnative-boringssl-static:2.0.25.Final")
 
     implementation("commons-io:commons-io:2.5")
