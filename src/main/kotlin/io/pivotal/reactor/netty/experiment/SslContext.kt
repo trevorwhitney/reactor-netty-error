@@ -13,7 +13,6 @@ class SslContext {
                     .forServer(readResource("certs/pasexporter.crt"), readResource("certs/pasexporter-pkcs8.key"))
                     .clientAuth(ClientAuth.REQUIRE)
                     .trustManager(readResource("certs/exporterCA.crt"))
-                    .startTls(true)
                     .build()
         }
 
